@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--
+           Author: Paul Bailey
+           Date:   11/24/2023
+           Project: project 2
+        -->
+    <meta charset="utf-8" />
+    <title>Request Information</title>
+    <link href="main.css" rel="stylesheet" />
+    <link href="form.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="aboutBox">
+        <div id="logo"><img src="images/logo.gif" alt="Rage Guitars" /></div>
+        <div id="social">Social Media</div>
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Instruments</a></li>
+                    <li><a href="cabnitry.html">Cabnitry</a></li>
+                    <li><a href="about.html">Request Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="middle">
+       <!-- <section> -->
+           
+            <div id="aboutBox">
+                <div id="textLeft">
+                    <h1>Request Information</h1>
+                    <p>
+                        Thank you for taking the time to visit Rage Guitar's corner of cyberspace!  The work we do is the result of a true passion for excellence in woodworking craftsmanship.  It's impossible to provide 'point and click' quotes becuase every project is unique.  If you would like to get more information about a project you are considering, please take a moment to complete the information request form and one of our artists will get back to you.
+                    </p>
+                </div>
+                <div id="formRight"
+                    <p>Required values are marked by an asterisk (*)</p>
+                    <form id="requestInfo" action="#" method="post">
+                        <fieldset id="custInfo">
+                            <legend>Your Contact And Request Info</legend>
+                            <div class="formRow">
+                                <label for="name">Name*</label>
+                                <input name="custName" id="name" type="text" placeholder="first and last name" required />
+                            </div>
+
+                            <div class="formRow">
+                                <label for="phone">Phone number</label>
+                                <input name="contactPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                            </div>
+
+                            <div class="formRow">
+                                <label for="mail">E-mail*</label>
+                                <input name="contactEmail" id="mail" type="email" required />
+                            </div>
+
+                            <div class="formRow">
+                                <label for="how">
+                                    How did you hear about us?
+                                    <br />(select all that apply)
+                                </label>
+                                <select name="infoSrc" id="how" size="5" multiple>
+                                    <option value="internet">Internet</option>
+                                    <option value="ref">Referral</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="formRow">
+                                <label for="type">What type of project are you considering?</label>
+                                <input name="projectType" id="type" type="text" list="pType" />
+                                <datalist id="pType">
+                                    <option value="Custom Cabnitry"></option>
+                                    <option value="Custom Furnature"></option>
+                                    <option value="Instrument - Accoustic Guitar"></option>
+                                    <option value="Instrument - Electric Guitar"></option>
+                                    <option value="Instrument - Violin"></option>
+                                    <option value="Other"></option>
+                                </datalist>
+                            </div>
+
+                            <label for="infoBox">Tell us more about your project</label>
+                            <textarea name="custProject" id="infoBox"></textarea>
+          
+                        </fieldset>
+                        <div id="buttons">
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        <!-- </section> -->
+        </div>
+        <div id="bottom">bottom</div>
+    </div>
+</html>
