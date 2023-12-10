@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--
+           Author: Paul Bailey
+           Date:   11/24/2023
+           Project: project 2
+        -->
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Heirloom Artisans</title>
+
+    <link href="main.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="form.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- googleFont sofia -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+</head>
+
+<body>
+    <div id="centerContainer">
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cabnitry.html">Cabinetry</a></li>
+                <li><a href="instruments.html">Instruments</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" id="woodBack">
+                <div class="col-sm-3" id="leftLogo">The Heirloom Artisans</div>
+                <div class="col-sm-9" id="rightLogo">Quality Craftsmanship Since 1995</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5" id="welcome">
+                <h1>Contact Us</h1>
+                <p>
+                    We would love to hear from you.  If you have questions about one of the projects you've seen here our would like to have us start crafting an heriloom of your own, fill out the form.'
+                </p>
+            </div>
+
+            <div class="col-sm-7" id="reviews">
+
+                <div id="aboutBox">
+                    <div id="formRight">
+                        <p>Required values are marked by an asterisk (*)</p>
+                        <form id="requestInfo" action="#" method="post">
+                            <fieldset id="custInfo">
+                                <legend>Your Contact And Request Info</legend>
+                                <div class="formRow">
+                                    <label for="name">Name*</label>
+                                    <input name="custName" id="name" type="text" placeholder="first and last name" required />
+                                </div>
+
+                                <div class="formRow">
+                                    <label for="phone">Phone number</label>
+                                    <input name="contactPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                                </div>
+
+                                <div class="formRow">
+                                    <label for="mail">E-mail*</label>
+                                    <input name="contactEmail" id="mail" type="email" required />
+                                </div>
+
+                                <div class="formRow">
+                                    <label for="how">How did you hear about us?<br />(select all that apply)
+                                    </label>
+                                    <input name="infoSource" id="how" type="text" list="sourceType" />
+                                    <datalist id="sourceType">
+                                        <option value="Internet"></option>
+                                        <option value="Referral"></option>
+                                        <option value="Other"></option>
+                                    </datalist>
+                                </div>
+
+                                <div class="formRow">
+                                    <label for="type">What type of project are you considering?</label>
+                                    <input name="projectType" id="type" type="text" list="pType" />
+                                    <datalist id="pType">
+                                        <option value="Custom Cabnitry"></option>
+                                        <option value="Custom Furnature"></option>
+                                        <option value="Instrument - Accoustic Guitar"></option>
+                                        <option value="Instrument - Electric Guitar"></option>
+                                        <option value="Instrument - Violin"></option>
+                                        <option value="Other"></option>
+                                    </datalist>
+                                </div>
+
+                                <label for="infoBox">Tell us more about your project</label>
+                                <textarea name="custProject" id="infoBox"></textarea>
+
+                            </fieldset>
+                            <div id="buttons">
+                                <input type="submit" value="Submit" />
+                                <input type="reset" value="Reset" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

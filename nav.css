@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* Navigation Bar Format*/
+div#nav {
+    width: 100%;
+    padding: 0px;
+    background-color: #333;
+    border: 1px solid white;
+    opacity: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+        color: white;
+        text-shadow: 3px 3px 5px white;
+    }
+
+.active {
+    background-image: url('images/woodgrain.jpg');
+     border: 1px solid white;
+}
+
+div#leftLogo {
+    font-family: "Sofia", sans-serif;
+    font-size: 38px;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+div#rightLogo {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    height: 7rem;
+    line-height: 8rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+div#woodBack {
+    background-image: url('images/woodgrain.jpg');
+    padding: 0px;
+}

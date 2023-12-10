@@ -10,7 +10,6 @@ div#aboutBox {
 
 div#textLeft {
     padding: 1px;
-    color: white;
     grid-column: 1/2;
     font-size: large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,8 +18,6 @@ div#textLeft {
 
 
 div#formRight {
-    color: white;
-    background-color: #5A483A;
     grid-column: 2/3;
 }
 
@@ -31,9 +28,9 @@ div.formRow {
     margin: 5px 0px;
 }
 
-    div.formRow > * {
-        flex: 1 1 150px;
-    }
+div.formRow > * {
+    flex: 1 1 150px;
+}
 
 
 /* Legend */
@@ -41,14 +38,20 @@ legend {
     background-color: black;
     color: white;
     padding: 5px;
+    border-radius: 15px;
+    text-align: center;
 }
 
+input[name="projectType"], [name="contactEmail"], [name="contactPhone"], [name="custName"], [name="infoSource"]{
+    border-radius: 15px;
+}
 
 /* Text Area */
 textarea {
     margin-top: 10px;
     height: 150px;
     width: 100%;
+    border-radius: 15px;
 }
 
 /* Form Button */
@@ -66,5 +69,5 @@ input[type='submit'], input[type='reset'] {
 
 /* Validation */
 input:focus, select:focus, textarea:focus {
-    background-color: lightblue;
+    background-color: tan;
 }
